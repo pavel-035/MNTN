@@ -23,8 +23,8 @@ a {
   padding-bottom: 6.25vw; }
 
 .logo {
-  display: block;
   width: 5.625vw;
+  display: block;
   font-size: 0; }
   .logo img {
     width: 100%; }
@@ -41,7 +41,7 @@ a {
     content: "";
     display: block;
     position: absolute;
-    bottom: -10;
+    bottom: -46.875vh;
     right: 0;
     left: 0;
     height: 104.16667vh;
@@ -67,7 +67,7 @@ a {
     background: url("../image/VG.png") left bottom/100% no-repeat;
     z-index: 1;
     position: absolute;
-    bottom: -23.4375vw;
+    bottom: -26.04167vw;
     right: 0;
     left: 0;
     top: 0; }

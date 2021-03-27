@@ -50,8 +50,8 @@ a {
 }
 
 .logo {
-	display: block;
 	width: vwSize(108);
+	display: block;
 	font-size: 0;
 	img {
 		width: 100%;
@@ -70,7 +70,7 @@ a {
 		content: "";
 		display: block;
 		position: absolute;
-		bottom: -10;
+		bottom: vhSize(-900);
 		right: 0;
 		left: 0;
 		height: vhSize(2000);
@@ -100,7 +100,7 @@ a {
 		background: url('../image/VG.png') left bottom / 100% no-repeat;
 		z-index: 1;
 		position: absolute;
-		bottom: vwSize(-450);
+		bottom: vwSize(-500);
 		// bottom: vwSize(-700);
 		right: 0;
 		left: 0;
