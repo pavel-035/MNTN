@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+.header__topBar, .header__content, .card, .footer, .footer__right {
+  display: flex; }
+
+.header__topBar, .header__content, .card, .footer, .footer__right {
+  justify-content: space-between; }
+
+body {
+  margin: 0; }
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.wrapper {
+  background: #0B1D26;
+  padding-bottom: 6.25vw; }
+
+.logo {
+  display: block;
+  width: 5.625vw;
+  font-size: 0; }
+  .logo img {
+    width: 100%; }
+
+.header {
+  background: url("../image/HG.png") no-repeat 50% 50%/cover;
+  padding: 3.33333vw 4.16667vw;
+  box-sizing: border-box;
+  height: 120vh;
+  z-index: 1;
+  position: relative;
+  overflow: hidden; }
+  .header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10;
+    right: 0;
+    left: 0;
+    height: 104.16667vh;
+    background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 52%);
+    z-index: 1000; }
+  .header__gradient {
+    background: url("../image/BG Hero.png") no-repeat 50% 50%/cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1; }
+  .header__mountainBg {
+    background: url("../image/MG.png") left bottom/100% no-repeat;
+    z-index: -10;
+    position: absolute;
+    bottom: -44.27083vw;
+    right: 0;
+    left: 0;
+    top: 0; }
+  .header__human {
+    background: url("../image/VG.png") left bottom/100% no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: -23.4375vw;
+    right: 0;
+    left: 0;
+    top: 0; }
+  .header__topBar {
+    z-index: 100; }
+  .header__menu {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 0; }
+  .header__menuItem {
+    display: inline-block;
+    margin: 0 1.04167vw; }
+    .header__menuItem:first-child {
+      margin-left: 0; }
+    .header__menuItem:last-child {
+      margin-right: 0; }
+    .header__menuItem a {
+      color: #fff;
+      font-family: "Alef";
+      font-size: 0.9375vw;
+      font-weight: bold; }
+  .header__user {
+    font-size: 0; }
+  .header__userIcon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.41667vw;
+    font-size: 0;
+    width: 1.25vw; }
+    .header__userIcon img {
+      width: 100%; }
+  .header__userText {
+    color: #fff;
+    vertical-align: middle;
+    font-family: "Alef";
+    font-size: 0.88542vw;
+    font-weight: bold; }
+  .header__content {
+    align-items: center;
+    margin-top: 10.3125vw; }
+  .header__social {
+    position: fixed;
+    left: 4.16667vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000; }
+  .header__socialItem {
+    margin: 0.625vw 0; }
+    .header__socialItem:first-child {
+      margin-top: 0; }
+    .header__socialItem:last-child {
+      margin-bottom: 0; }
+    .header__socialItem a {
+      display: block;
+      width: 1.25vw;
+      font-size: 0; }
+      .header__socialItem a img {
+        width: 100%; }
+  .header .textRotate {
+    display: block;
+    color: #fff;
+    font-family: "Alef";
+    font-size: 0.9375vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed; }
+  .header__middleBlock {
+    z-index: -1;
+    transform: translateY(-52.08333vw) translateX(50%); }
+  .header__mainTitle {
+    color: #fff;
+    width: 44.27083vw;
+    font-size: 3.4375vw;
+    font-family: "Cinzel";
+    font-weight: 400;
+    margin: 1.66667vw 0; }
+  .header__scrollToBtn {
+    display: block;
+    font-size: 0;
+    margin: 0; }
+  .header__scrollToText {
+    color: #fff;
+    font-size: 0.9375vw;
+    font-family: "Alef";
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 0.83333vw; }
+  .header__scrollToIcon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.83333vw;
+    font-size: 0; }
+    .header__scrollToIcon img {
+      width: 100%; }
+  .header__sliderNav {
+    position: fixed;
+    right: 4.16667vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000; }
+  .header__navItem {
+    cursor: pointer;
+    text-align: right;
+    color: #fff;
+    font-family: "Alef";
+    font-size: 0.9375vw;
+    font-weight: bold;
+    padding: 1.04167vw 1.66667vw;
+    padding-left: 0;
+    box-sizing: border-box;
+    border-right: 0.15625vw solid rgba(255, 255, 255, 0.5); }
+    .header__navItem.active {
+      border-right: 0.15625vw solid #fff; }
+
+.blockDiscript {
+  font-size: 0; }
+  .blockDiscript__line {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.66667vw;
+    height: 0.10417vh;
+    width: 3.75vw;
+    background: #FBD784; }
+  .blockDiscript__text {
+    vertical-align: middle;
+    color: #FBD784;
+    font-size: 0.9375vw;
+    font-family: "Alef";
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.content {
+  position: relative;
+  z-index: 100;
+  width: 76.14583vw;
+  margin: -0.52083vw auto 10.41667vw; }
+
+.card {
+  z-index: 1000;
+  margin: 10.41667vw 0; }
+  .card:first-child {
+    margin-top: 0; }
+  .card:last-child {
+    margin-bottom: 0; }
+  .card__discription {
+    padding-top: 1.97917vw;
+    transform: translateY(31.25vw); }
+  .card__content {
+    width: 32.91667vw;
+    margin: -5.26042vw 0 0 7.8125vw; }
+  .card__number {
+    width: 14.32292vw;
+    display: block;
+    font-size: 0; }
+    .card__number img {
+      width: 100%; }
+  .card__title {
+    color: #fff;
+    font-size: 3.33333vw;
+    font-family: "Cinzel";
+    font-weight: 400;
+    margin: 1.40625vw 0; }
+  .card__text {
+    color: #fff;
+    font-size: 0.9375vw;
+    font-family: "Alef";
+    font-weight: bold; }
+  .card__moreBtn {
+    display: block;
+    font-size: 0;
+    margin-top: 1.40625vw; }
+  .card__moreText {
+    color: #FBD784;
+    font-size: 0.9375vw;
+    font-family: "Alef";
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 0.83333vw; }
+  .card__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.83333vw;
+    font-size: 0; }
+    .card__icon img {
+      width: 100%; }
+  .card__image {
+    width: 29.47917vw;
+    margin-top: 15.625vw;
+    display: block;
+    font-size: 0;
+    transform: translateY(7.8125vw); }
+    .card__image img {
+      width: 100%; }
+
+.footer {
+  width: 76.14583vw;
+  margin: 0 auto; }
+  .footer__text {
+    width: 19.94792vw;
+    font-family: "Alef";
+    font-weight: 400;
+    font-size: 0.9375vw;
+    color: #fff;
+    margin-top: 1.25vw; }
+  .footer__textPrivacy {
+    font-family: "Alef";
+    font-weight: 300;
+    font-size: 0.9375vw;
+    color: #fff;
+    opacity: 0.5;
+    height: auto 0 0; }
+  .footer__right {
+    text-align: right;
+    width: 28.95833vw; }
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer__menu {
+    display: inline-block;
+    text-align: left; }
+  .footer__title {
+    width: 19.94792vw;
+    font-family: "Alef";
+    font-weight: 500;
+    font-size: 1.25vw;
+    color: #FBD784;
+    margin-bottom: 1.25vw; }
+  .footer__item {
+    margin: 0.83333vw 0;
+    font-family: "Alef";
+    font-weight: 300;
+    font-size: 0.83333vw; }
+    .footer__item:first-child {
+      margin-top: 0; }
+    .footer__item:last-child {
+      margin-bottom: 0; }
