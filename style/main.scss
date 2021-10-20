@@ -218,7 +218,7 @@ a {
 		margin: vwSize(32) 0;
 	}
 	&__scrollToBtn {
-		display: block;
+		display: none;
 		font-size: 0;
 		margin: 0;
 	}
@@ -247,18 +247,19 @@ a {
 		z-index: 10000;
 	}
 	&__navItem {
-		cursor: pointer;
 		text-align: right;
 		color: $textColor;
 		font-family: $textFamily;
 		font-size: vwSize(18);
 		font-weight: bold;
-		padding: vwSize(20) vwSize(32);
-		padding-left: 0;
-		box-sizing: border-box;
+		padding: vwSize(20) vwSize(16);
 		border-right: vwSize(3) solid rgba(255, 255, 255, 0.5);
 		&.active {
 			border-right: vwSize(3) solid #fff;
+		}
+		a {
+			cursor: pointer;
+			padding: vwSize(10) vwSize(16);
 		}
 	}
 }
@@ -290,12 +291,11 @@ a {
 	position: relative;
 	z-index: 100;
 	width: vwSize(1462);
-	margin: vwSize(-10) auto vwSize(100);
+	margin: 0 auto vwSize(100);
 }
 
 .section_triger {
 	height: 100vh;
-	transform: translateY(-20%);
 	&:nth-child(2n) {
 		.card {
 			direction: rtl;
@@ -310,10 +310,10 @@ a {
 	@extend %d-flex;
 	@extend %jc-sb;
 	z-index: 1000;
-	margin: vwSize(50) 0;
+	margin: 0;
 	&__discription {
 		padding-top: vwSize(38);
-		transform: translateY(vwSize(600));
+		transform: translateY(70%);
 	}
 	&__content {
 		width: vwSize(632);
@@ -364,10 +364,10 @@ a {
 	}
 	&__image {
 		width: vwSize(566);
-		margin-top: vwSize(300);
+		margin-top: vwSize(100);
 		display: block;
 		font-size: 0;
-		transform: translateY(vwSize(150));
+		transform: translateY(50%);
 		img {
 			width: 100%;
 		}
@@ -649,13 +649,13 @@ a {
 		position: relative;
 		z-index: 100;
 		width: smSize(400);
-		margin: smSize(-10) auto smSize(200);
+		margin: smSize(-10) auto smSize(50);
 	}
 
 	.card {
 		display: block;
 		z-index: 1000;
-		margin: smSize(50) 0;
+		margin: smSize(50) 0 0;
 		&:first-child {
 			margin-top: 0;
 		}

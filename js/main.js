@@ -79,8 +79,8 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		gsap.to('.first .card__discription', {
 			scrollTrigger: {
 				trigger: '.section_triger.one',
-				start: 'top 10%',
-				end: 'bottom',
+				start: 'top bottom',
+				end: 'bottom 10%',
 				scrub: 1,
 				// markers: true
 			},
@@ -89,8 +89,8 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		gsap.to('.first .card__image', {
 			scrollTrigger: {
 				trigger: '.section_triger.one',
-				start: 'top 10%',
-				end: 'bottom',
+				start: 'top bottom',
+				end: 'bottom 10%',
 				scrub: 1,
 				// markers: true
 			},
@@ -99,8 +99,8 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		gsap.to('.second .card__discription', {
 			scrollTrigger: {
 				trigger: '.section_triger.two',
-				start: 'top 10%',
-				end: 'bottom',
+				start: 'top bottom',
+				end: 'bottom 10%',
 				scrub: 1,
 				// markers: true
 			},
@@ -109,18 +109,18 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		gsap.to('.second .card__image', {
 			scrollTrigger: {
 				trigger: '.section_triger.two',
-				start: 'top 10%',
-				end: 'bottom',
+				start: 'top bottom',
+				end: 'bottom 10%',
 				scrub: 1,
 				// markers: true
 			},
-			y: 0
+			y: 0,
 		});
 		gsap.to('.third .card__discription', {
 			scrollTrigger: {
 				trigger: '.section_triger.three',
-				start: 'top 10%',
-				end: 'bottom',
+				start: 'top bottom',
+				end: 'bottom 10%',
 				scrub: 1,
 				// markers: true
 			},
@@ -129,12 +129,60 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		gsap.to('.third .card__image', {
 			scrollTrigger: {
 				trigger: '.section_triger.three',
-				start: 'top 10%',
-				end: 'bottom',
+				start: 'top bottom',
+				end: 'bottom 10%',
 				scrub: 1,
 				// markers: true
 			},
 			y: 0
+		});
+		gsap.to('.header__navItem.start', {
+			scrollTrigger: {
+				trigger: '#section_start',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
+		gsap.to('.header__navItem.one', {
+			scrollTrigger: {
+				trigger: '#section_one',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
+		gsap.to('.header__navItem.two', {
+			scrollTrigger: {
+				trigger: '#section_two',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
+		gsap.to('.header__navItem.three', {
+			scrollTrigger: {
+				trigger: '#section_three',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
 		});
 	} else {
 		gsap.to(".header__human", {
@@ -192,4 +240,13 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 			backgroundPosition: '50% 100%'
 		});
 	}
+});
+
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+	event.preventDefault();
+
+	$('html, body').animate({
+		scrollTop: $($.attr(this, 'href')).offset().top
+	}, 1000);
 });
