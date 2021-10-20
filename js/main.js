@@ -78,9 +78,9 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 
 		gsap.to('.first .card__discription', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 'top 50%',
-				end: 'bottom 50%',
+				trigger: '.section_triger.one',
+				start: 'top 10%',
+				end: 'bottom',
 				scrub: 1,
 				// markers: true
 			},
@@ -88,9 +88,9 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		});
 		gsap.to('.first .card__image', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 'top 50%',
-				end: 'bottom 50%',
+				trigger: '.section_triger.one',
+				start: 'top 10%',
+				end: 'bottom',
 				scrub: 1,
 				// markers: true
 			},
@@ -98,9 +98,9 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		});
 		gsap.to('.second .card__discription', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 'top 50%',
-				end: 'bottom 50%',
+				trigger: '.section_triger.two',
+				start: 'top 10%',
+				end: 'bottom',
 				scrub: 1,
 				// markers: true
 			},
@@ -108,9 +108,9 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		});
 		gsap.to('.second .card__image', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 'top 50%',
-				end: 'bottom 50%',
+				trigger: '.section_triger.two',
+				start: 'top 10%',
+				end: 'bottom',
 				scrub: 1,
 				// markers: true
 			},
@@ -118,9 +118,9 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		});
 		gsap.to('.third .card__discription', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 'top 50%',
-				end: 'bottom 50%',
+				trigger: '.section_triger.three',
+				start: 'top 10%',
+				end: 'bottom',
 				scrub: 1,
 				// markers: true
 			},
@@ -128,9 +128,9 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 		});
 		gsap.to('.third .card__image', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 'top 50%',
-				end: 'bottom 50%',
+				trigger: '.section_triger.three',
+				start: 'top 10%',
+				end: 'bottom',
 				scrub: 1,
 				// markers: true
 			},

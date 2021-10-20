@@ -64,6 +64,9 @@ a {
 	img {
 		width: 100%;
 	}
+	&.media {
+		display: none;
+	}
 }
 
 .header {
@@ -92,7 +95,7 @@ a {
 		bottom: 0;
 		right: 0;
 		left: 0;
-		z-index: -1;
+		z-index: -8;
 	}
 	&__mountainBg {
 		background: url('../image/MG.png') left bottom / 100% no-repeat;
@@ -106,7 +109,7 @@ a {
 	}
 	&__human {
 		background: url('../image/VG.png') left bottom / 100% no-repeat;
-		z-index: 1;
+		z-index: -1;
 		position: absolute;
 		bottom: vwSize(-500);
 		// bottom: vwSize(-700);
@@ -117,7 +120,7 @@ a {
 	&__topBar {
 		@extend %d-flex;
 		@extend %jc-sb;
-		z-index: 100;
+		z-index: 100000;
 	}
 	&__menu {
 		padding: 0;
@@ -139,6 +142,7 @@ a {
 			font-family: $textFamily;
 			font-size: vwSize(18);
 			font-weight: bold;
+			cursor: pointer;
 		}
 	}
 	&__user {
@@ -202,7 +206,7 @@ a {
 		// transform: scaleX(90px);
 	}
 	&__middleBlock {
-		z-index: -1;
+		z-index: -2;
 		transform: translateY(vwSize(-1000)) translateX(50%);
 	}
 	&__mainTitle {
@@ -268,6 +272,9 @@ a {
 		height: vhSize(2);
 		width: vwSize(72);
 		background: $textColorTwo;
+		&.media {
+			display: none;
+		}
 	}
 	&__text {
 		vertical-align: middle;
@@ -286,23 +293,24 @@ a {
 	margin: vwSize(-10) auto vwSize(100);
 }
 
+.section_triger {
+	height: 100vh;
+	transform: translateY(-20%);
+	&:nth-child(2n) {
+		.card {
+			direction: rtl;
+			&__discription {
+				direction: ltr;
+			}
+		}
+	}
+}
+
 .card {
 	@extend %d-flex;
 	@extend %jc-sb;
 	z-index: 1000;
-	margin: vwSize(200) 0;
-	&:first-child {
-		margin-top: 0;
-	}
-	&:last-child {
-		margin-bottom: 0;
-	}
-	&:nth-child(2n) {
-		direction: rtl;
-		.card__discription {
-			direction: ltr;
-		}
-	}
+	margin: vwSize(50) 0;
 	&__discription {
 		padding-top: vwSize(38);
 		transform: translateY(vwSize(600));
