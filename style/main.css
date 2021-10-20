@@ -608,7 +608,7 @@ a {
     position: relative;
     z-index: 100;
     width: 66.6666666667vw;
-    margin: -1.6666666667vw auto 8.3333333333vw;
+    margin: -1.6666666667vw auto 0;
   }
 
   .card {
