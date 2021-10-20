@@ -239,6 +239,55 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 			},
 			backgroundPosition: '50% 100%'
 		});
+
+		gsap.to('.header__navItem.start', {
+			scrollTrigger: {
+				trigger: '#section_start',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
+		gsap.to('.header__navItem.one', {
+			scrollTrigger: {
+				trigger: '#section_one',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
+		gsap.to('.header__navItem.two', {
+			scrollTrigger: {
+				trigger: '#section_two',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
+		gsap.to('.header__navItem.three', {
+			scrollTrigger: {
+				trigger: '#section_three',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 1,
+				// markers: true
+			},
+			borderRightWidth: '0.15625vw',
+			borderRightColor: '#fff',
+			borderRightStyle: 'solid'
+		});
 	}
 });
 

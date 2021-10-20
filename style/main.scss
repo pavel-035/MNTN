@@ -583,7 +583,7 @@ a {
 			margin: smSize(15) 0;
 		}
 		&__scrollToBtn {
-			display: inline-block;
+			display: none;
 			font-size: 0;
 			margin: 0;
 		}
@@ -636,6 +636,7 @@ a {
 			height: smSize(2);
 			width: 20%;
 			&.media {
+				display: inline-block;
 				margin-left: 5%;
 				margin-right: 0;
 			}
