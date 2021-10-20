@@ -575,8 +575,7 @@ a {
     font-family: "Alef";
     font-size: 3vw;
     font-weight: bold;
-    padding: 3.3333333333vw 5.3333333333vw;
-    padding-left: 0;
+    padding: 3.3333333333vw 2.6666666667vw;
     box-sizing: border-box;
     border-right: 0.5vw solid rgba(255, 255, 255, 0.5);
   }
@@ -611,7 +610,7 @@ a {
   .card {
     display: block;
     z-index: 1000;
-    margin: 8.3333333333vw 0 0;
+    margin: 8.3333333333vw 0;
   }
   .card:first-child {
     margin-top: 0;

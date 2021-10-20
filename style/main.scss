@@ -619,8 +619,7 @@ a {
 			font-family: $textFamily;
 			font-size: smSize(18);
 			font-weight: bold;
-			padding: smSize(20) smSize(32);
-			padding-left: 0;
+			padding: smSize(20) smSize(16);
 			box-sizing: border-box;
 			border-right: smSize(3) solid rgba(255, 255, 255, 0.5);
 			&.active {
@@ -656,7 +655,7 @@ a {
 	.card {
 		display: block;
 		z-index: 1000;
-		margin: smSize(50) 0 0;
+		margin: smSize(50) 0;
 		&:first-child {
 			margin-top: 0;
 		}
