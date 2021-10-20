@@ -628,6 +628,10 @@ a {
 		}
 	}
 
+	.section_triger {
+		transform: translateY(-20%);
+	}
+
 	.blockDiscript {
 		font-size: 0;
 		&__line {
@@ -656,12 +660,6 @@ a {
 		display: block;
 		z-index: 1000;
 		margin: smSize(50) 0;
-		&:first-child {
-			margin-top: 0;
-		}
-		&:last-child {
-			margin-bottom: 0;
-		}
 		&__discription {
 			padding-top: 0;
 			transform: translateY(0);

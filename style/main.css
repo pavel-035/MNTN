@@ -583,6 +583,10 @@ a {
     border-right: 0.5vw solid #fff;
   }
 
+  .section_triger {
+    transform: translateY(-20%);
+  }
+
   .blockDiscript {
     font-size: 0;
   }
@@ -611,12 +615,6 @@ a {
     display: block;
     z-index: 1000;
     margin: 8.3333333333vw 0;
-  }
-  .card:first-child {
-    margin-top: 0;
-  }
-  .card:last-child {
-    margin-bottom: 0;
   }
   .card__discription {
     padding-top: 0;
