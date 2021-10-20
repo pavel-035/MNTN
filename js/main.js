@@ -248,7 +248,7 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 				scrub: 1,
 				// markers: true
 			},
-			borderRightWidth: '0.15625vw',
+			borderRightWidth: '0.258vw',
 			borderRightColor: '#fff',
 			borderRightStyle: 'solid'
 		});
@@ -260,7 +260,7 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 				scrub: 1,
 				// markers: true
 			},
-			borderRightWidth: '0.15625vw',
+			borderRightWidth: '0.258vw',
 			borderRightColor: '#fff',
 			borderRightStyle: 'solid'
 		});
@@ -272,7 +272,7 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 				scrub: 1,
 				// markers: true
 			},
-			borderRightWidth: '0.15625vw',
+			borderRightWidth: '0.258vw',
 			borderRightColor: '#fff',
 			borderRightStyle: 'solid'
 		});
@@ -284,7 +284,7 @@ installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 				scrub: 1,
 				// markers: true
 			},
-			borderRightWidth: '0.15625vw',
+			borderRightWidth: '0.258vw',
 			borderRightColor: '#fff',
 			borderRightStyle: 'solid'
 		});
