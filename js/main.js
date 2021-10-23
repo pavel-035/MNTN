@@ -19,6 +19,11 @@ function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
 	layoutChangedCallback(mql.matches);
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+	document.querySelector('.preloader_box').style.display = 'none';
+	document.querySelector('body').style.overflow = 'auto';
+})
+
 installMediaQueryWatcher("(min-width: 600px)", function(matches) {
 	if (matches) {
 		gsap.to(".header__human", {
